@@ -1,7 +1,3 @@
-Absolutely! Here's a template for your `README.md`. You can fill in the specific details as needed.
-
----
-
 # Wound Scanner
 
 ## Overview
