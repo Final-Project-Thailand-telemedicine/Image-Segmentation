@@ -1,0 +1,18 @@
+# Virtual Environment
+venv/
+
+# Data and models
+data/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# PyCharm project settings
+.idea/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# OS generated files
+.DS_Store
