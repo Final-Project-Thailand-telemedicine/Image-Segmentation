@@ -33,7 +33,41 @@ The Wound Scanner project leverages deep learning to accurately segment and meas
    ```bash
    pip install -r requirements.txt
    ```
-
+## File Structure
+   ```bash
+   wound_segmentation/
+│
+├── app/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── model.py
+│   ├── dataset.py
+│   ├── train.py
+│   ├── predict.py
+│   └── utils.py
+│
+├── data/
+│   ├── raw/
+│   ├── processed/
+│   └── models/
+│
+├── notebooks/
+│   └── exploratory_analysis.ipynb
+│
+├── tests/
+│   ├── __init__.py
+│   ├── test_model.py
+│   └── test_dataset.py
+│
+├── venv/                  # Virtual environment (not version controlled)
+│
+├── Dockerfile
+├── requirements.txt
+├── .dockerignore
+├── .gitignore
+├── README.md
+└── setup.sh               # Script to set up the virtual environment
+   ```
 ## Usage
 1. **Prepare Your Dataset**
    - Ensure your images are stored in the `data/images` directory.
