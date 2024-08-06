@@ -1,5 +1,5 @@
 # Virtual Environment
-venv/
+env1/
 
 # Data and models
 data/
