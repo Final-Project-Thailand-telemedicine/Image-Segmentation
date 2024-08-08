@@ -1,17 +1,18 @@
-import torch
-from torch import optim, nn
-from torch.utils.data import DataLoader, random_split
-# from tqdm import tqdm
+import os
 
+import torch
+from carvana_dataset import CarvanaDataset
+from torch import nn, optim
+from torch.utils.data import DataLoader, random_split
+from tqdm import tqdm
 from unet import UNet
-# from carvana_dataset import CarvanaDataset
 
 if __name__ == "__main__":
     LEARNING_RATE = 3e-4
-    BATCH_SIZE = 32
-    EPOCHS = 2
-    DATA_PATH = "/content/drive/MyDrive/uygar/unet-segmentation/data"
-    MODEL_SAVE_PATH = "/content/drive/MyDrive/uygar/unet-segmentation/models/unet.pth"
+    BATCH_SIZE = 2
+    EPOCHS = 1
+    DATA_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'data')
+    MODEL_SAVE_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'models', 'unet.pth')
 
     device = "cuda" if torch.cuda.is_available() else "cpu"
     train_dataset = CarvanaDataset(DATA_PATH)
