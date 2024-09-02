@@ -10,7 +10,7 @@ from unet import UNet
 if __name__ == "__main__":
     LEARNING_RATE = 3e-4
     BATCH_SIZE = 2
-    EPOCHS = 1
+    EPOCHS = 2
     DATA_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'data')
     MODEL_SAVE_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'models', 'unet.pth')
 
